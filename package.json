@@ -14,12 +14,14 @@
     "pm2": "^2.1.5"
   },
   "devDependencies": {
+    "jest": "^29.0.3",
     "nodemon": "^1.11.0"
   },
   "scripts": {
     "dev": "nodemon",
     "prod": "pm2 start src/loader.js --name my-money-backend",
-    "stop": "pm2 stop my-money-backend"
+    "stop": "pm2 stop my-money-backend",
+    "test": "jest --passWithNoTests"
   },
   "author": "",
   "license": "ISC"
